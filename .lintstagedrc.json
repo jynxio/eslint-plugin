@@ -1,0 +1,7 @@
+{
+    "*.{js,mjs,cjs,ts,jsx,tsx}": ["eslint --fix"],
+    "*.{css,scss,sass,less,postcss}": ["stylelint --fix"],
+    "*.{js,mjs,cjs,ts,jsx,tsx,html,vue,xml,yml,yaml,css,scss,sass,less,postcss,json,jsonc}": [
+        "prettier --write"
+    ]
+}

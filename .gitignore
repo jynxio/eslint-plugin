@@ -1,0 +1,14 @@
+# MacOS
+*.pem
+.DS_Store
+.AppleDouble
+.LSOverride
+
+
+# Development
+.env*
+.pnpm-debug.log*
+**/node_modules
+
+# Production
+**/dist

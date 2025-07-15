@@ -1,0 +1,40 @@
+{
+    "compilerOptions": {
+        /* Base */
+        "target": "esnext",
+        "module": "esnext",
+        "lib": ["ESNext"],
+
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "noEmit": true,
+        "allowJs": true,
+        "declaration": true,
+        "skipLibCheck": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "isolatedModules": true,
+        "resolveJsonModule": true,
+        "moduleDetection": "force",
+        "moduleResolution": "node",
+        "verbatimModuleSyntax": true,
+        "allowImportingTsExtensions": true,
+        "forceConsistentCasingInFileNames": true,
+
+        "paths": {
+            "@/*": ["./src/*"],
+            "$/*": ["./*"]
+        },
+
+        /* Strictness */
+        "strict": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitOverride": true,
+        "noUncheckedIndexedAccess": true,
+        "noFallthroughCasesInSwitch": true,
+        "noUncheckedSideEffectImports": true
+    },
+    "include": ["src/**/*.ts"],
+    "exclude": ["node_modules", "dist"]
+}

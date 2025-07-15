@@ -1,0 +1,62 @@
+{
+    "license": "MIT",
+    "version": "1.0.0",
+    "author": "Jynxio",
+    "name": "@jynxio/eslint-plugin",
+    "description": "Jynxio's ESLint plugin library",
+    "repository": "https://github.com/jynxio/eslint-plugin",
+    "keywords": [
+        "eslint",
+        "eslint-plugin",
+        "import"
+    ],
+    "type": "module",
+    "sideEffects": false,
+    "files": [
+        "dist"
+    ],
+    "exports": {
+        ".": {
+            "import": "./dist/index.js",
+            "types": "./dist/index.d.ts"
+        }
+    },
+    "engines": {
+        "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+    },
+    "scripts": {
+        "build": "tsup",
+        "test": "tsx ./src/test.ts",
+        "release": "pnpm build && npm publish --access public",
+        "lint:js": "eslint --fix",
+        "lint:style": "prettier --write .",
+        "lint:all": "pnpm lint:js && pnpm lint:style",
+        "prepare": "husky",
+        "lintstaged": "lint-staged",
+        "commitlint": "commitlint --edit"
+    },
+    "devDependencies": {
+        "@commitlint/cli": "^19.8.1",
+        "@commitlint/config-conventional": "^19.8.1",
+        "@eslint/js": "^9.30.1",
+        "@types/estree": "^1.0.8",
+        "@types/node": "^24.0.13",
+        "@typescript-eslint/eslint-plugin": "^8.36.0",
+        "@typescript-eslint/parser": "^8.36.0",
+        "@typescript-eslint/types": "^8.36.0",
+        "@typescript-eslint/utils": "^8.36.0",
+        "eslint": "^9.30.1",
+        "eslint-config-prettier": "^10.1.5",
+        "globals": "^16.3.0",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.1.2",
+        "prettier": "^3.6.2",
+        "tsup": "^8.5.0",
+        "tsx": "^4.20.3",
+        "typescript": "^5.8.3",
+        "typescript-eslint": "^8.36.0"
+    },
+    "peerDependencies": {
+        "eslint": ">=9.0.0"
+    }
+}
