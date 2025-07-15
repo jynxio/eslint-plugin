@@ -7,7 +7,7 @@
 <h2 align="center">☝🏻</h2>
 
 ```
-pnpm i -D eslint @jynxio/app
+pnpm i -D eslint @jynxio/eslint-plugin
 ```
 
 <br />
